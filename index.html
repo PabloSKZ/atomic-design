@@ -3,44 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cormorant|Rubik|Spectral&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css">
     <link rel="stylesheet" href="style.css">
     <title>Atomic Design</title>
 </head>
 <body>
-    <div class="primary">
-        <h1>Du Biff</h1>
+    <div class="container-fluid primary">
+        <div class="row">
+            <div class="col-2 nav-item"><h1>Du Biff</h1></div>
+            <div class="col-3 tagline nav-item">Le thème qui multiplie la moulaga</div>
+            <div class="col-1 nav-item"><a href="#typo" class="btn btn-primary">Typo</a></div>
+            <div class="col-1 nav-item"><a href="#items" class="btn btn-primary">Items</a></div>
+            <div class="col-1 nav-item"><a href="#icons" class="btn btn-primary">Icons</a></div>
+            <div class="col-1 nav-item"><a href="#cards" class="btn btn-primary">Cards</a></div>
+            <div class="col-1 nav-item"><a href="#navbar" class="btn btn-primary">Navbar</a></div>
+            <div class="col-1"></div>
+            <div class="col-1 nav-item"><a href="#" class="btn btn-secondary">Log In</a></div>
+        </div>
     </div>
     <div class="secondary">
-        <h3>Texts :</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum sed at beatae eveniet autem accusamus, tempora quia quo fugit vero? Maxime sint blanditiis fugit quibusdam obcaecati optio tempore, cumque assumenda.</p>
-        <blockquote>T'as j'veux dire ou t'as pas j'veux dire ?</blockquote>
-        <p class="primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum sed at beatae eveniet autem accusamus, tempora quia quo fugit vero? Maxime sint blanditiis fugit quibusdam obcaecati optio tempore, cumque assumenda.</p>
-        <ul>
-            <li>oui</li>
-            <li>non</li>
-            <li>peut être</li>
-        </ul>
-        <h3>Buttons :</h3>
-        <p>
-            <a href="#" class="btn btn-primary">Moulaga</a>
-            <a href="#" class="btn btn-secondary">Grosse Moula</a>
-            <a href="#" class="btn btn-warning">'Tention</a>
-        </p>
-        <p>
-            <a href="#" class="btn btn-danger">Wachout !!</a>
-            <a href="#" class="btn btn-info">Information</a>
-            <a href="#" class="btn btn-success">Yeah !!</a>
-        </p>
+        <br>
+        <div class="container">
+        <h2 class="mb-4 text-center" id="typo">Typo</h2>
+        <hr>
+            <div class="row">
+                <div class="col-4">
+                    <h4 class="mb-4">Titles :</h4>
+                    <h1 class="text-center">h1</h1>
+                    <h2 class="text-center">h2</h2>
+                    <h3 class="text-center">h3</h3>
+                    <h4 class="text-center">h4</h4>
+                </div>
+                <div class="col-4">
+                    <h4 class="mb-4">Paragraph :</h4>
+                    <p class="primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum sed at beatae eveniet autem accusamus, tempora quia quo fugit vero? Maxime sint blanditiis fugit quibusdam obcaecati optio tempore, cumque assumenda.</p>
+                </div>
+            
+                <div class="col-4">
+                    <h4 class="mb-4">Blockquote :</h4>
+                    <blockquote class="primary">« T'as j'veux dire ou t'as pas j'veux dire ? » - <span class="text-light">Napoléon Bonaparte</span></blockquote>
+                </div>
+            </div>
+        <h2 class="mt-5 mb-4 text-center" id="items">Items</h2>
+        <hr>
+            <div class="row">
+
+                <div class="col-4">
+                <h4 class="mb-4">Lists :</h4>
+                    <ul>
+                        <li class="primary">primary</li>
+                        <li class="secondary">secondary</li>
+                        <li class="warning">warning</li>
+                        <li class="danger">danger</li>
+                        <li class="info">info</li>
+                        <li class="success">success</li>
+                        <li class="dark">dark</li>
+                        <li class="medium-light">medium-light</li>
+                        <li class="light">light</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h4 class="mb-4">Buttons :</h4>
+                        <a href="#" class="btn btn-primary">Moulaga</a>
+                        <a href="#" class="btn btn-secondary">Grosse Moula</a>
+                        <a href="#" class="btn btn-warning">'Tention</a>
+                        <a href="#" class="btn btn-danger">Wachout !!</a>
+                        <a href="#" class="btn btn-info">Information</a>
+                        <a href="#" class="btn btn-success">Yeah !!</a>
+                </div>
+                <div class="col-4">
+                    <h4 class="mb-4">Forms :</h4>
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                      </form>
+                </div>
+            </div>
+            <br><br>
+    </div>
+    </div>
+    <div class="primary">
+        <div class="container">
+            <br><br>
+            <h2 class="mb-4 text-center" id="icons">Icons</h2>
+            <hr>
+            <div class="row">
+                <div class="col-3"></div>
+                <p class="col-6"><i class="fas fa-dollar-sign fa-4x"></i><i class="fas fa-comments-dollar fa-4x"></i><i class="fas fa-user-friends fa-4x"></i><i class="fas fa-calculator fa-4x"></i><i class="fas fa-chart-bar fa-4x"></i><i class="fas fa-chart-line fa-4x"></i><i class="fas fa-chart-pie fa-4x"></i><i class="fas fa-percent fa-4x"></i></p>
+                <div class="col-3"></div>
+                <br><br>
+            </div>
+            <h2 class="mt-5 mb-4 text-center" id="cards">Cards</h2>
+            <hr>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card light">
+                        <img src="biz2.jpeg" alt="Business" class="img-fluid">
+                        <p class="text-center">Le biz est carré</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card light">
+                        <img src="escobar.jpg" alt="Pablo Escobar" class="img-fluid">
+                        <a href="#" class="btn btn-primary">Plata</a>
+                        <a href="#" class="btn btn-secondary">Plomo</a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card light">
+                        <h5 class="text-center mt-1 mb-1">L'argent t'appelle</h5>
+                        <img src="allo.jpg" alt="Allo" class="img-fluid">
+                        <p>C'est pas hallal, tout ça c'est pas hallal
+                            J'dois faire du biff, de la mula, du caramel
+                            Du caramel
+                            C'est pas hallal, tout ça c'est pas hallal
+                            J'dois faire du biff, de la mula, du caramel
+                            Du caramel</p>
+                            <a href="https://www.youtube.com/watch?v=YiC5SeRfLYw" class="text-center btn btn-info">En savoir plus ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+    <div class="secondary">
+        <br>
+        <div class="container">
+            <h2 class="mb-4 text-center" id="navbar">Navbar</h2>
+            <hr>
+            <div class="container-fluid primary">
+                <div class="row">
+                    <div class="col-2 nav-item"><h1>Du Biff</h1></div>
+                    <div class="col-2 tagline nav-item">Le thème qui multiplie la moulaga</div>
+                    <div class="col-1 nav-item"><a href="#typo" class="btn btn-primary">Typo</a></div>
+                    <div class="col-1 nav-item"><a href="#items" class="btn btn-primary">Items</a></div>
+                    <div class="col-1 nav-item"><a href="#icons" class="btn btn-primary">Icons</a></div>
+                    <div class="col-1 nav-item"><a href="#cards" class="btn btn-primary">Cards</a></div>
+                    <div class="col-2"></div>
+                    <div class="col-2 nav-item"><a href="#" class="btn btn-secondary">Log In</a></div>
+                </div>
+        </div>
         <br><br>
     </div>
     <div class="primary">
-        <h3>Icons :</h3>
-        <p><i class="fas fa-dollar-sign fa-4x"></i><i class="fas fa-comments-dollar fa-4x"></i><i class="fas fa-user-friends fa-4x"></i><i class="fas fa-calculator fa-4x"></i><i class="fas fa-chart-bar fa-4x"></i><i class="fas fa-chart-line fa-4x"></i><i class="fas fa-chart-pie fa-4x"></i></p>
-        <br><br>
+        <br>
+        <div class="container-fluid">
+            <p class="text-center">PabloSKZ : <a href="https://github.com/PabloSKZ" class="light">https://github.com/PabloSKZ</a></p>
+            <p class="text-center">All Credit to Moula Corp ©</p>
+        </div>
     </div>
 
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
 </body>
 </html>
